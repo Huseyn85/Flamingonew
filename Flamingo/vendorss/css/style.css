@@ -1,0 +1,623 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+#Header {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 20px 0;
+}
+#Header h2 {
+  font-size: 37px;
+  color: #fff;
+  font-weight: bold;
+}
+#Header h2:hover {
+  text-decoration: none;
+}
+#Header .li {
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  margin-right: 1rem;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+#Header .li:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+#Header .li::after {
+  content: '';
+  position: absolute;
+  width: 30%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 10px;
+  background-color: #E9204F;
+  transform-origin: bottom right;
+  transition: transform .3s ease-in-out;
+}
+
+#Digital {
+  background-image: url(http://gentium.pixerex.com/wp/wp-content/uploads/2019/01/hero_02.jpg);
+  background-position: 70% 48%;
+  background-repeat: no-repeat;
+  background-size: 640px auto;
+  background-color: #000000;
+  padding-top: 7rem;
+}
+#Digital .digital-text hr {
+  width: 70px;
+  background: #e9204f;
+  height: 3px;
+}
+#Digital .digital-text h2 {
+  font-size: 78px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+#Digital .digital-text .btnDig {
+  padding: 20px 40px;
+  color: #fff;
+  border: 2px solid #e9204f;
+  font-weight: bold;
+  border-radius: 0;
+  position: absolute;
+  transition: transform 1s ease-in-out;
+  z-index: 1;
+  overflow: hidden;
+}
+#Digital .digital-text .btnDig:hover:before {
+  left: 0;
+  z-index: -1;
+}
+#Digital .digital-text .btnDig:hover {
+  color: #fff;
+  transition: 1s ease-in-out;
+}
+#Digital .digital-text .btnDig:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #E9204F;
+  transition: transform 1s ease-in-out;
+}
+#Digital .Box1 {
+  padding-top: 10rem;
+}
+#Digital .Box1 .box1 .box-icon i {
+  color: #fff;
+}
+#Digital .red-box {
+  width: 110%;
+  height: 70px;
+  background: #e9204f;
+  position: absolute;
+  left: 0;
+  top: 90%;
+  z-index: -1;
+}
+#Digital .box {
+  background: #1b1b1b;
+  padding: 0 2rem 4rem 2rem;
+  transition: ease-in-out;
+}
+#Digital .box:hover {
+  background: #e9204f;
+  color: #fff;
+}
+#Digital .box:hover .box-icon i {
+  color: #fff;
+}
+#Digital .box:hover .box-text hr {
+  background: #fff;
+}
+#Digital .box .box-icon {
+  font-size: 48px;
+}
+#Digital .box .box-icon i {
+  color: #e9204f;
+}
+#Digital .box .box-text h4 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bolder;
+}
+#Digital .box .box-text hr {
+  background: #e9204f;
+  width: 50px;
+  height: 1.5px;
+}
+#Digital .box .box-text p {
+  font-size: 15px;
+  color: #fff;
+}
+#Digital .box:nth-child(1) {
+  background: #e9204f;
+}
+
+#Services {
+  margin-top: 5rem;
+}
+#Services .services-text hr {
+  width: 50px;
+  background: #e9204f;
+  height: 1px;
+}
+#Services .services-text h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  color: #101010;
+}
+#Services .services-text h4 {
+  font-family: "Trade Gothic", Sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #e9204f;
+}
+#Services .middle {
+  background: #f5f3f3;
+  padding: 40px 20px;
+  transition: transform 0.5s;
+  border: .5px solid #e4e4e4;
+  cursor: pointer;
+}
+#Services .middle:hover {
+  background: #e9204f;
+}
+#Services .middle:hover .col-text h5 {
+  color: #fff;
+  margin-left: 25px;
+}
+#Services .middle:hover .col-icon i {
+  color: #fff;
+}
+#Services .middle h5 {
+  color: #101010;
+  font-family: "AvantGarde Bold", Sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 24px;
+}
+#Services .middle i {
+  color: #747474;
+  font-size: 24px;
+}
+#Services .midhr hr {
+  background-color: #e9204f;
+  height: 60px;
+  width: 2px;
+  position: absolute;
+  left: 50%;
+}
+
+#Works {
+  margin-top: 8rem;
+}
+#Works .works-text {
+  padding: 0px 10px 2rem 10px;
+}
+#Works .works-text hr {
+  width: 40px;
+  height: 1px;
+  background: #e9204f;
+  margin-bottom: 20px;
+}
+#Works .works-text h2 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 58px;
+  color: #101010;
+}
+#Works .works-text h4 {
+  font-family: "Trade Gothic", Sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #e9204f;
+}
+#Works .btnWork {
+  padding: 12px 35px;
+  color: #000;
+  border: 2px solid #e9204f;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: inherit;
+}
+#Works .btnWork:hover {
+  background: #E9204F;
+  color: #fff;
+  transition: transform .3s ease-in-out;
+}
+
+#Shoes .black-fon {
+  cursor: pointer;
+  padding-bottom: 15px;
+}
+#Shoes .black-fon:hover {
+  transform: scale(0.97);
+  transition: transform .2s ease-in;
+}
+#Shoes .black-fon:hover .black-fon-img img {
+  filter: none;
+  transition: transform .5s ease-in;
+}
+#Shoes .black-fon:hover .black-fon-text {
+  visibility: visible;
+  transition: transform  .2s ease-in-out;
+}
+#Shoes .black-fon .black-fon-img img {
+  filter: grayscale(1);
+}
+#Shoes .black-fon .black-fon-text {
+  position: absolute;
+  top: 8rem;
+  left: 8.5rem;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  visibility: hidden;
+}
+#Shoes .midhr hr {
+  background-color: #e9204f;
+  height: 60px;
+  width: 2px;
+  position: absolute;
+  left: 50%;
+}
+
+#About {
+  margin-top: 10rem;
+}
+#About .about-text .about-left hr {
+  width: 40px;
+  height: 1px;
+  background: #e9204f;
+}
+#About .about-text .about-left h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  color: #101010;
+}
+#About .about-text .about-left h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #e9204f;
+}
+#About .about-text .about-right {
+  padding: 2.5rem 0px 0px 10px;
+}
+#About .about-img .img-left {
+  position: relative;
+}
+#About .about-img .img-left:hover .photo-left {
+  filter: none;
+}
+#About .about-img .img-left .photo-left {
+  filter: grayscale(1);
+}
+#About .about-img .img-left .img-text {
+  position: absolute;
+}
+#About .about-img .img-left .img-text h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+#About .about-img .img-left .img-text p {
+  font-size: 15px;
+  color: #fff;
+}
+#About .about-img .img-right .right1:hover .photo-right {
+  filter: none;
+}
+#About .about-img .img-right .right1 .photo-right {
+  filter: grayscale(1);
+}
+#About .about-img .img-right .right1 .img-text1 h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  font-family: "AvantGarde Bold", Sans-serif;
+}
+#About .about-img .img-right .right1 .img-text1 p {
+  font-size: 15px;
+  color: #fff;
+}
+#About .about-img .img-right .right2:hover .photo-right {
+  filter: none;
+}
+#About .about-img .img-right .right2 .photo-right {
+  filter: grayscale(1);
+}
+#About .about-img .img-right .right2 .img-text2 h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+#About .about-img .img-right .right2 .img-text2 p {
+  font-size: 15px;
+  color: #fff;
+}
+
+#Philosopy {
+  margin-top: 5rem;
+}
+#Philosopy .phil-text h2 {
+  font-size: 22px;
+  color: #101010;
+  font-weight: bold;
+  font-family: "AvantGarde Bold", Sans-serif;
+}
+#Philosopy .phil-text p {
+  color: #747474;
+  font-size: 17px;
+  font-family: "Trade Gothic", Sans-serif;
+}
+#Philosopy .midhr hr {
+  background-color: #e9204f;
+  height: 60px;
+  width: 2px;
+  position: absolute;
+  left: 50%;
+}
+
+#Clients {
+  margin-top: 15rem;
+}
+#Clients .client-img {
+  background-image: url(http://gentium.pixerex.com/wp/wp-content/uploads/2019/01/client_01.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 621px;
+}
+#Clients .client-box {
+  background-color: #E9204F;
+  height: 100px;
+  width: 120px;
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  z-index: -1;
+}
+#Clients .client-text .client-top hr {
+  width: 40px;
+  height: 1px;
+  background: #e9204f;
+}
+#Clients .client-text .client-top h2 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  font-family: "AvantGarde Bold", Sans-serif;
+}
+#Clients .client-text .client-top h4 {
+  font-family: "Trade Gothic", Sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #e9204f;
+  line-height: 17px;
+}
+#Clients .client-text .client-bottom p {
+  color: #747474;
+  font-family: "Trade Gothic", Sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+#Clients .client-text .client-name h6 {
+  font-family: "Roboto Condensed", Sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+#Brands {
+  padding-top: 5rem;
+}
+#Brands .brand-line hr {
+  width: 94%;
+}
+#Brands .brand-name img {
+  padding: 3rem;
+  cursor: pointer;
+}
+#Brands .brand-name img:hover {
+  transform: translateY(-10px);
+  transition: transform .3s ease-in-out;
+}
+#Brands .midhr hr {
+  background-color: #e9204f;
+  height: 60px;
+  width: 2px;
+  position: absolute;
+  left: 50%;
+}
+
+#Latest {
+  padding-top: 10rem;
+}
+#Latest .latest-text h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  color: #101010;
+  font-family: "AvantGarde Bold", Sans-serif;
+}
+#Latest .latest-text h4 {
+  font-family: "Trade Gothic", Sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #E9204F;
+  line-height: 17px;
+}
+#Latest .latest-img p {
+  color: #fff;
+}
+#Latest .latest-img h3 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+#Latest .latest-img i {
+  color: #fff;
+  font-size: 40px;
+  visibility: hidden;
+}
+#Latest .latest-img .latest-img-1 {
+  padding-bottom: 1rem;
+}
+#Latest .latest-img .latest-img-1:hover .latest-img1 {
+  filter: none;
+}
+#Latest .latest-img .latest-img-1:hover .latest-text1-contain i {
+  visibility: visible;
+  cursor: pointer;
+}
+#Latest .latest-img .latest-img-1:hover .latest-text1-contain {
+  transform: translateY(-20px);
+  transition: transform .3s ease-in-out;
+}
+#Latest .latest-img .latest-img-1 .latest-img1 {
+  filter: grayscale(1);
+}
+#Latest .latest-img .latest-img-1 .latest-text1-contain {
+  position: absolute;
+  top: 9rem;
+  left: 1rem;
+  padding: 0 3rem;
+}
+#Latest .midhr hr {
+  background-color: #e9204f;
+  height: 60px;
+  width: 2px;
+  position: absolute;
+  left: 50%;
+}
+
+#Footer {
+  background: #1B1B1B;
+}
+#Footer .footer-container {
+  padding: 6rem 0px;
+}
+#Footer .footer-left {
+  padding-bottom: 15px;
+}
+#Footer .footer-left i {
+  font-size: 20px;
+  border: 2px solid #E9204F;
+  border-radius: 50px;
+  padding: 14px 18px;
+  color: #fff;
+  cursor: pointer;
+}
+#Footer .footer-left i:hover {
+  background-color: #E9204F;
+}
+#Footer .footer-mid {
+  padding-bottom: 15px;
+}
+#Footer .footer-mid h2 {
+  font-size: 48px;
+  color: #fff;
+  font-family: "AvantGarde Bold", Sans-serif;
+}
+#Footer .footer-right .btnDig {
+  padding: 20px 40px;
+  color: #fff;
+  border: 2px solid #e9204f;
+  font-weight: bold;
+  border-radius: 0;
+  transition: color ease-in-out;
+}
+#Footer .footer-right .btnDig:hover {
+  background: #E9204F;
+  color: #fff;
+}
+
+#Footer1 {
+  background: #161616;
+  color: #fff;
+}
+#Footer1 .footer1 {
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+#Footer1 .footer1:hover h4 {
+  color: #E9204F;
+}
+#Footer1 .footer1:hover p {
+  color: #E9204F;
+}
+#Footer1 .footer1 h4 {
+  font-size: 20px;
+  color: #fff;
+  font-family: "AvantGarde Bold", Sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+#Footer1 .footer1 p {
+  text-align: center;
+}
+
+#Footer3 {
+  background: #000000;
+  color: #fff;
+}
+#Footer3 .footer3-container {
+  padding: 25px;
+}
+#Footer3 .footer3-left p {
+  color: #747474;
+  font-size: 14px;
+}
+#Footer3 .footer3-left span {
+  color: #fff;
+}
+#Footer3 .footer3-right {
+  padding-left: 6rem;
+}
+#Footer3 .footer3-right p {
+  font-size: 14px;
+  position: relative;
+  cursor: pointer;
+  padding-right: 15px;
+  text-align: center;
+}
+#Footer3 .footer3-right p:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+#Footer3 .footer3-right p::after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #E9204F;
+  transform-origin: bottom right;
+  transition: transform .3s ease-in-out;
+}
+
+/*# sourceMappingURL=style.css.map */
